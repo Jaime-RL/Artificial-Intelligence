@@ -1,5 +1,7 @@
 # Artificial Intelligence Algorithms
 
+[![tests](https://github.com/Jaime-RL/Artificial-Intelligence/actions/workflows/tests.yml/badge.svg)](https://github.com/Jaime-RL/Artificial-Intelligence/actions/workflows/tests.yml)
+
 Classic AI techniques implemented from scratch in Python: **informed and uninformed search**, **constraint satisfaction**, **metaheuristics**, **adversarial search** and a **neural network trained with backpropagation** — no ML frameworks.
 
 ## Contents
@@ -21,6 +23,9 @@ pip install -r requirements.txt
 cd search
 python pathfinding_gbfs_astar.py   # sample map included
 python knapsack_bfs_dfs.py         # sample instance included
+
+cd ..
+python -m pytest -v               # BFS/DFS vs brute force, A* vs Dijkstra
 ```
 
 Other scripts expect their input file in the working directory:
